@@ -12,14 +12,22 @@ const listUsers = async () => {
         content += ` <tr> 
         <td>${index + 1}</td>
         <td>${user.name}</td>
-        <td>${user.email}</td>
-        <td>${user.phone}</td>
-        <td>${user.CP}</td>
+        <td>${user.Prestamos[0].id}</td>
+        <td>${user.Prestamos[0].monto}</td>
+        <td>${user.Prestamos[0].interes}</td>
+        <td>${user.Prestamos[0].fecha}</td>
+        <td>${actualizarPago()}</td>
+        <td>${actualizarPago()}</td>
+        <td>${actualizarPago()}</td>
+        <td>${actualizarPago()}</td>
         <td></td>
-        <td> <input class="btn btn-primary" type="button" value="Solicitar préstamo"> </td>
-         </tr> `;
+        <td><button class="btn btn-danger solicitarBtn" type="button">Eliminar</button></td>
+ `;
       });
-  //Acceder al tbody usando el DOM
+
+      //
+
+
       const $tbody = document.getElementById("tableBody_users");
       $tbody.innerHTML = content ;
   
@@ -27,7 +35,29 @@ const listUsers = async () => {
       alert(ex);
     }
   };
-  
+
+
+  function actualizarPago (){
+    return `
+    <select class="form-select" aria-label="Default select example">
+    <option selected value="1">Pendiente</option>
+    <option value="2">Pagado</option>
+  </select>
+    `
+
+  };
+
+
   window.addEventListener("load", async () => {
     await listUsers();
   });
+
+  const newClientButton = document.getElementById("newClientButton");
+
+  newClientButton.addEventListener("click", () => {
+    window.location.href = "./formularioNuevos.html";
+  });
+  
+
+
+  

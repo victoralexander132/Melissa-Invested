@@ -12,10 +12,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -35,10 +35,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -56,12 +56,12 @@
         "id": 1,
         "fecha":"2022/03/09",
         "monto":"5000",
-        "interes":0.20,
+        "interes":0.15,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -81,10 +81,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -104,10 +104,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -127,10 +127,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -150,10 +150,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -173,10 +173,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -196,10 +196,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
@@ -219,10 +219,10 @@
         "monto":"5000",
         "interes":0.20,
         "Pagos":[
-          {"Primero": true},
-          {"Segundo": true},
-          {"Tercero": false},
-          {"Cuarto":false}
+          {"Pagado": true},
+          {"Pagado": true},
+          {"Pagado": false},
+          {"Pagado":false}
         ]
       }
 
