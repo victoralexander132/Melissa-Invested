@@ -16,60 +16,58 @@
   <body>
 
 
-    <div class="container">
+    <div class="container-fluid col-12">
       <div class="row">
-        <div class="col-1">
-          <div id="sidebar" class="fixed-top">
-            <h2> <a class="nav-link active" href="./index.html"> <img id="imagenprincipal" src="./assets/img/logo-invested.png"></a> </h2>
+        <nav class="col-2 col-md-2 col-lg-2 d-md-block bg-light sidebar d-none ">
+          <div class="sidebar-sticky">
+            <img class="img-fluid" src="./assets/img/logo-invested.png">
             <ul class="nav flex-column">
-              <li class="nav-item1"> <a class="nav-link active limit" href="./index.html">Clientes</a></li>
-              <li class="nav-item2"> <a class="nav-link active limit" href="./prestamos.html">Préstamos</a></li>
-            </ul> 
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                  Clientes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./prestamos.html">Prestamos</a>
+              </li>
+
+            </ul>
+            
           </div>
-        </div>
-        <div class="col navform">
-          <nav class="navbar navbar-expand-lg  sticky-top col-12">
-            <div class="container-fluid">
-             
-              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
 
-                <form class="" role="img">
-                  <img class="profilepicture" src="./assets/img/undraw_profile.svg">
-                  <div>
-                  <span class="img-thumbnail accordion-flush" type="img">
-                    Armando Vera
-                  </span>
-                </div>
-                </form>
-              </div>
-            </div>
-          </nav>
-
-          <!--navBar-->
-
-          <!--table-->
-
-          <h1 class="h3 mb-2 text-gray-800">Clientes</h1>
-          <p class="mb-4"> Historial de creditos de Invested</p>
-                <table id="datatable_users" class="table">
-                  <thead>
-                      <tr>
-                          <th class="centered">ID Cliente</th>
-                          <th class="centered">Nombre</th>
-                          <th class="centered">Correo</th>
-                          <th class="centered">Teléfono</th>
-                          <th class="centered">CP</th>
-                          <th class="centered">#Prestamos </th>
-                          <th class="centered">Status</th>
-                          <th class="centered">Solicitud</th>
-                      </tr>
-                  </thead>
-                  <tbody id="tableBody_users"></tbody>
-              </table>
-        </div>
-        </div>
-      </div>
+        </nav>
+        
     </div>
+    </div>
+
+
+    <div id="content" class="container-fluid col-10 offset-lg-2">
+      <h1 class="h3 mb-2 text-gray-800">Clientes</h1>
+     <p class="mb-4"> Historial de creditos de Invested</p>
+     <div class="tab" >
+      <table id="datatable_users" class="table">
+        <thead>
+            <tr>
+                <th class="centered">ID Cliente</th>
+                <th class="centered">Nombre</th>
+                <th class="centered">Correo</th>
+                <th class="centered">Teléfono</th>
+                <th class="centered">CP</th>
+                <th class="centered">#Prestamos </th>
+                <th class="centered">Status</th>
+                <th class="centered">Solicitud</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody_users"></tbody>
+    </table>
+
+     </div>
+           
+
+ </div>
+
+
+          
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

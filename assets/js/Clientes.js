@@ -40,7 +40,7 @@ const listUsers = () => {
     alert(ex);
   }
 };
-
+//Solicitar préstamo
 const solicitarPrestamo = function(e) {
   let id = e.target.parentNode.parentNode.cells[0].textContent;
   window.location.href=`../../formularioClientes.html?id=${id}`

@@ -24,7 +24,7 @@ const listUsers = async () => {
       <td>${actualizarPago()}</td>
       <td>${actualizarPago()}</td>
       <td>${prestamo.fecha}</td>
-      <td><button  class="btn btn-danger solicitarBtn" type="button">Eliminar</button></td>
+      <td><button  class="btn btn-danger solicitarBtneliminar" type="button">Eliminar</button></td>
       </tr>
       `;
       });
@@ -63,3 +63,4 @@ newClientButton.addEventListener("click", () => {
   var nio = fechctul.getFullYear();
 
   console.log(Die + '/' + Mes +"/" + nio);*/
+

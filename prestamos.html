@@ -14,45 +14,35 @@
     <link href="./assets/css/index.css" rel="stylesheet" />
   </head>
   <body>
-
-
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-1">
-          <div id="sidebar" class="fixed-top">
-            <h2> <a class="nav-link active limit" href="./index.html"> <img id="imagenprincipal" src="./assets/img/logo-invested.png"></a> </h2>
+        <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar d-none ">
+          <div class="sidebar-sticky">
+            <img class="img-fluid" src="./assets/img/logo-invested.png">
             <ul class="nav flex-column">
-              <li class="nav-item1 "> <a class="nav-link active " href="./index.html">Clientes</a></li>
-              <li class="nav-item2"> <a class="nav-link active " href="./prestamos.html">Préstamos</a></li>
-            </ul> 
-          </div>
-        </div>
-        <div class="col navform">
-          <nav class="navbar navbar-expand-lg  sticky-top col-11">
-            <div class="container-fluid">
-             
-              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                  Clientes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./prestamos.html">Prestamos</a>
+              </li>
 
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
-              </div>
-            </div>
-          </nav>
+            </ul>
+            
+          </div>
+
+        </nav>
+        
+    </div>
+    </div>
 
           <!--navBar-->
 
           <!--table-->
-
-          <h1 class="h3 mb-2 text-gray-800">Préstamos</h1>
+<div id="content" class="container-fluid col-10 offset-lg-2">
+  <h1 class="h3 mb-2 text-gray-800">Préstamos</h1>
           <p class="mb-4"> Historial de préstamos de Invested</p>
                 <table id="datatable_users" class="table">
                   <thead>
@@ -71,14 +61,18 @@
                       </tr>
                   </thead>
                   <tbody id="tableBody_users"></tbody>
+                  <div id="btnnuevo"class="d-flex justify-content-lg-end">
+                    <button class="btn btn-primary ml-auto" id="newClientButton" type="button">Nuevo Prestamo</button>
+                 </div>
+                </div>
+                        
               </table>
-        </div>
-        </div>
-      </div>
-    </div>
+      
 
 
-    <button class="btn btn-primary justify-content-md-end btnnuevo" id="newClientButton" type="button">Nuevo Prestamo</button>
+          
+
+
 
 
     <script
