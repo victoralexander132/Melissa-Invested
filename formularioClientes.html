@@ -18,68 +18,92 @@
   <div class="container">
 
       <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+          <label for="name" class="col-sm-2 col-form-label">Nombre</label>
           <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Leanne Graham">
+            <input type="text" readonly class="form-control-plaintext" id="name" value="">
           </div>
         </div>
   
       <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Sincere@april.biz">
+            <input type="text" readonly class="form-control-plaintext" id="email" value="">
           </div>
         </div>
   
         <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Telefono</label>
+          <label for="phone" class="col-sm-2 col-form-label">Teléfono</label>
           <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Sincere@april.biz">
+            <input type="text" readonly class="form-control-plaintext" id="phone" value="">
           </div>
         </div>
   
         <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Dirección</label>
+          <label for="cp" class="col-sm-2 col-form-label">CP</label>
           <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Sincere@april.biz">
+            <input type="text" readonly class="form-control-plaintext" id="cp" value="">
           </div>
         </div>
   
-        <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">CP</label>
-          <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Sincere@april.biz">
-          </div>
-        </div>
-      
+
   
         
   
         <div class="input-group">
           <span>Monto</span>
   
-          <input type="text" class="form-control monto1 col-md-2" aria-label="Dollar amount (with dot and two decimal places)">
+          <input type="number" min="1000" max="1000000" step="500" class="form-control monto1 col-md-2" aria-label="Dollar amount (with dot and two decimal places)">
           <span class="input-group-text">$</span>
           <span class="input-group-text">0.00</span>
         </div>
-  
-  
+
+
+
         <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Interés</label>
+          <label for="interes" class="col-sm-2 col-form-label">Interés</label>
+          <div class="col-sm-10">
+            <!-- select tag with options 10 and 20 -->
+            <select id="interes" class="form-control-select" name="interes" aria-label="Selecciona tasa de interes">
+              <option value="">Tasa de interés</option>
+              <option value="1">10%</option>
+              <option value="2">20%</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="mb-3 row">
+          <label for="idprestamo" class="col-sm-2 col-form-label">Préstamo ID </label>
           <div class="col-sm-10">
             <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Sincere@april.biz">
           </div>
         </div>
 
+
+
         <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Fecha</label>
+          <label for="staticEmail" class="col-sm-2 col-form-label">Total a pagar </label>
           <div class="col-sm-10">
-            <input type="date" id="staticEmail" value="date">
+            <input   id="total" type="number" readonly class="form-control-plaintext" value=5>
+   <!-- en 4 pagos -->
           </div>
         </div>
+
       </div>
 
   </div>
+
+<a   class="btn btn-info" role="button">Regresar</a>
+
+<a href="./index.html" id="botonredirect"  class="btn btn-info" role="button">Clientes</a>
+
+
+
+</div>
+
+</div>
+
+  
 
     
 
@@ -90,7 +114,7 @@
     crossorigin="anonymous"
   ></script>
 
-  <script type="module"  src=""></script>
+  <script type="module"  src="./assets/js/formularioClientes.js"></script>
 </body>
 </html>
 </body>

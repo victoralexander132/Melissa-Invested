@@ -1,63 +1,65 @@
-
 const listUsers = async () => {
-    try {
+  try {
+    const responsePrestamos = await fetch("../../prestamos.json");
+    const prestamos = await responsePrestamos.json();
 
-        const response = await fetch('../../users.json');
-        const users = await response.json();
-      
-      console.log(users)
+    const response = await fetch("../../users.json");
+    const users = await response.json();
 
-     let content = ``;
-      users.forEach((user, index) => {
-        content += ` <tr> 
-        <td>${index + 1}</td>
-        <td>${user.name}</td>
-        <td>${user.Prestamos[0].id}</td>
-        <td>${user.Prestamos[0].monto}</td>
-        <td>${user.Prestamos[0].interes}</td>
-        <td>${user.Prestamos[0].fecha}</td>
-        <td>${actualizarPago()}</td>
-        <td>${actualizarPago()}</td>
-        <td>${actualizarPago()}</td>
-        <td>${actualizarPago()}</td>
-        <td></td>
-        <td><button class="btn btn-danger solicitarBtn" type="button">Eliminar</button></td>
- `;
+    console.log(prestamos.prestamos);
+    console.log(prestamos.prestamos[0].idusuario);
+    console.log(users[0].name);
+
+
+    let content = ``;
+    prestamos.prestamos.forEach(prestamo => {
+      content +=`
+      <tr>
+      <td>${prestamo.id}</td>
+      <td>${users[prestamo.idusuario-1].name}</td>
+      <td>${prestamo.monto}</td>
+      <td>${prestamo.interes}</td>
+      <td>${actualizarPago()}</td>
+      <td>${actualizarPago()}</td>
+      <td>${actualizarPago()}</td>
+      <td>${actualizarPago()}</td>
+      <td>${prestamo.fecha}</td>
+      <td><button  class="btn btn-danger solicitarBtn" type="button">Eliminar</button></td>
+      </tr>
+      `;
       });
 
-      //
+    const $tbody = document.getElementById("tableBody_users");
+    $tbody.innerHTML = content;
+  } catch (ex) {
+    alert(ex);
+  }
+};
 
-
-      const $tbody = document.getElementById("tableBody_users");
-      $tbody.innerHTML = content ;
-  
-    } catch (ex) {
-      alert(ex);
-    }
-  };
-
-
-  function actualizarPago (){
-    return `
+function actualizarPago() {
+  return `
     <select class="form-select" aria-label="Default select example">
     <option selected value="1">Pendiente</option>
     <option value="2">Pagado</option>
   </select>
-    `
+    `;
+}
 
-  };
+window.addEventListener("load", async () => {
+  await listUsers();
+});
 
+const newClientButton = document.getElementById("newClientButton");
 
-  window.addEventListener("load", async () => {
-    await listUsers();
-  });
+newClientButton.addEventListener("click", () => {
+  window.location.href = "./formularioNuevos.html";
+});
 
-  const newClientButton = document.getElementById("newClientButton");
+//prueb
 
-  newClientButton.addEventListener("click", () => {
-    window.location.href = "./formularioNuevos.html";
-  });
-  
+/*var fechctul= new Date();
+  var Die = fechctul.getDate();
+  var Mes = fechctul.getMonth()+1;
+  var nio = fechctul.getFullYear();
 
-
-  
+  console.log(Die + '/' + Mes +"/" + nio);*/
