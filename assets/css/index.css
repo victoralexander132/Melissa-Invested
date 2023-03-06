@@ -44,7 +44,13 @@ width: 100%;
 .nav-item{
 margin-top:20px;
 }
+.imglogo{
+  margin-bottom:10px;
+}
 
+.nav-item{
+  position:-ms-page;
+}
 
 /* Estilos generales para todo el formulario */
 .container {

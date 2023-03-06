@@ -1,22 +1,34 @@
 const listUsers = async () => {
   try {
-    const responsePrestamos = await fetch("../../prestamos.json");
-    const prestamos = await responsePrestamos.json();
+    if (localStorage.getItem("users") === null) {
+      //fetch users.json file into users variable
+      fetch("../../users.json")
+        .then((response) => response.json())
+        .then((users) => {
+          localStorage.setItem("users", JSON.stringify(users));
+        });
+    } else {
+      var users = JSON.parse(localStorage.getItem("users"));
+    }
 
-    const response = await fetch("../../users.json");
-    const users = await response.json();
-
-    console.log(prestamos.prestamos);
-    console.log(prestamos.prestamos[0].idusuario);
-    console.log(users[0].name);
+    if (localStorage.getItem("prestamos") === null) {
+      //fetch users.json file into users variable
+      fetch("../../prestamos.json")
+        .then((response) => response.json())
+        .then((prestamos) => {
+          localStorage.setItem("prestamos", JSON.stringify(prestamos.prestamos));
+        });
+    } else {
+      var prestamos = JSON.parse(localStorage.getItem("prestamos"));
+    }
 
 
     let content = ``;
-    prestamos.prestamos.forEach(prestamo => {
-      content +=`
+    prestamos.forEach((prestamo) => {
+      content += `
       <tr>
       <td>${prestamo.id}</td>
-      <td>${users[prestamo.idusuario-1].name}</td>
+      <td>${users[prestamo.idusuario - 1].name}</td>
       <td>${prestamo.monto}</td>
       <td>${prestamo.interes}</td>
       <td>${actualizarPago()}</td>
@@ -27,7 +39,7 @@ const listUsers = async () => {
       <td><button  class="btn btn-danger solicitarBtneliminar" type="button">Eliminar</button></td>
       </tr>
       `;
-      });
+    });
 
     const $tbody = document.getElementById("tableBody_users");
     $tbody.innerHTML = content;
@@ -47,6 +59,21 @@ function actualizarPago() {
 
 window.addEventListener("load", async () => {
   await listUsers();
+
+  const eliminarBotones = document.querySelectorAll(".solicitarBtneliminar");
+  eliminarBotones.forEach((boton) => {
+    boton.addEventListener("click", (e) => {
+      const prestamos =  JSON.parse(localStorage.getItem("prestamos"));
+  
+      let idPrestamo = e.target.parentNode.parentNode.cells[0].textContent;
+       prestamos.splice(idPrestamo-1,1)
+      localStorage.setItem("prestamos", JSON.stringify(prestamos))
+      location.href= location.href
+
+
+      console.log(prestamos)
+    });
+  });
 });
 
 const newClientButton = document.getElementById("newClientButton");
@@ -64,3 +91,4 @@ newClientButton.addEventListener("click", () => {
 
   console.log(Die + '/' + Mes +"/" + nio);*/
 
+//buscarparent
