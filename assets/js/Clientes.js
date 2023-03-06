@@ -1,17 +1,25 @@
 
+
+
+
 const listUsers = () => {
-  try { 
-    if (localStorage.getItem("users")===null){
+  try {
+    if (localStorage.getItem("users") === null) {
       //fetch users.json file into users variable
-      fetch('../../users.json')
-      .then(response => response.json())
-      .then(users => {
+      fetch("../../users.json")
+        .then((response) => response.json())
+        .then((users) => {
           localStorage.setItem("users", JSON.stringify(users));
         });
-      } else{
-            var users = JSON.parse(localStorage.getItem("users"));
-          }
-              
+    } else {
+      var users = JSON.parse(localStorage.getItem("users"));
+    }
+
+    if (localStorage.getItem("nuevoidPrestamo") === null) {
+      localStorage.setItem("nuevoidPrestamo", 15)
+    } 
+
+
 
     let content = ``;
     users.forEach((user, index) => {
@@ -24,36 +32,28 @@ const listUsers = () => {
         <td></td>
         <td></td>
         <td><button  class="btn btn-primary solicitarBtn" type="button">Solicitar préstamo</button></td>
-      </tr>`;
+      </tr>
+      
+      `;
     });
-
 
     const $tbody = document.getElementById("tableBody_users");
     $tbody.innerHTML = content;
 
-    const buttons = document.querySelectorAll('.solicitarBtn');
+    const buttons = document.querySelectorAll(".solicitarBtn");
     buttons.forEach((button) => {
-      button.addEventListener('click', solicitarPrestamo);
+      button.addEventListener("click", solicitarPrestamo);
     });
-  
   } catch (ex) {
     alert(ex);
   }
 };
 //Solicitar préstamo
-const solicitarPrestamo = function(e) {
+const solicitarPrestamo = function (e) {
   let id = e.target.parentNode.parentNode.cells[0].textContent;
-  window.location.href=`../../formularioClientes.html?id=${id}`
+  window.location.href = `../../formularioClientes.html?id=${id}`;
 };
-
-
 
 window.addEventListener("load", async () => {
   await listUsers();
-  
- 
 });
-
-
-
-

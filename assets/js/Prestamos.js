@@ -35,7 +35,7 @@ const listUsers = async () => {
       <td>${actualizarPago()}</td>
       <td>${actualizarPago()}</td>
       <td>${actualizarPago()}</td>
-      <td>${prestamo.fecha}</td>
+      <td></td>
       <td><button  class="btn btn-danger solicitarBtneliminar" type="button">Eliminar</button></td>
       </tr>
       `;
@@ -63,15 +63,17 @@ window.addEventListener("load", async () => {
   const eliminarBotones = document.querySelectorAll(".solicitarBtneliminar");
   eliminarBotones.forEach((boton) => {
     boton.addEventListener("click", (e) => {
-      const prestamos =  JSON.parse(localStorage.getItem("prestamos"));
-  
+      const prestamos = JSON.parse(localStorage.getItem("prestamos"));
+
       let idPrestamo = e.target.parentNode.parentNode.cells[0].textContent;
-       prestamos.splice(idPrestamo-1,1)
-      localStorage.setItem("prestamos", JSON.stringify(prestamos))
-      location.href= location.href
+      let newPrestamos = prestamos.filter((prestamo) => {
+        return prestamo.id != idPrestamo;
+      });
 
-
-      console.log(prestamos)
+      localStorage.setItem("prestamos", JSON.stringify(newPrestamos));
+ 
+ 
+      location.reload()
     });
   });
 });

@@ -4,8 +4,7 @@
 
         "id": 1,
         "idusuario":1,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -17,8 +16,7 @@
       {
         "id": 2,
         "idusuario":2,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -31,8 +29,7 @@
       {
         "id": 3,
         "idusuario":3,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.2,
         "Pagos":[
           {"Pagado": true},
@@ -44,8 +41,7 @@
       {
         "id": 4,
         "idusuario":4,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -57,8 +53,7 @@
       {
         "id": 5,
         "idusuario":5,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -70,8 +65,7 @@
       {
         "id": 6,
         "idusuario":6,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -83,8 +77,7 @@
       {
         "id": 7,
         "idusuario":7,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -96,8 +89,7 @@
       {
         "id": 8,
         "idusuario":8,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -109,8 +101,7 @@
       {
         "id": 9,
         "idusuario":9,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -122,9 +113,8 @@
       {
         "id": 10,
         "idusuario":10,
-        "fecha":"2022/03/09",
-        "monto":"5000",
-        "interes":0.20,
+        "monto":8800,
+        "interes": 0.20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -135,8 +125,7 @@
       {
         "id": 11,
         "idusuario":1,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -148,8 +137,7 @@
       {
         "id": 12,
         "idusuario":4,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -161,8 +149,7 @@
       {
         "id": 13,
         "idusuario":6,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
@@ -174,8 +161,7 @@
       {
         "id": 14,
         "idusuario":6,
-        "fecha":"2022/03/09",
-        "monto":"5000",
+        "monto":5000,
         "interes":0.20,
         "Pagos":[
           {"Pagado": true},
