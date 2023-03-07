@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:invalid + span::before {
+    content: "⚠ ";
+  }
+  
+  input:valid + span::before {
+    content: "✓ ";
+    color: green;
+  }
+  
+  .form-check-input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  #idprestamo {
+    width: 40%;
+  }
+  
+  
+  .btnatras{
+    margin-block-end: 70px;
+    border-radius: 50px;
+    color:darkgrey;
+    font-size: 14px;
+    border: black;
+    border-style: dotted ;
+  
+    margin-bottom: 500px;
+    
+  
+  }

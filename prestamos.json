@@ -5,7 +5,7 @@
         "id": 1,
         "idusuario":1,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -17,7 +17,7 @@
         "id": 2,
         "idusuario":2,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -30,7 +30,7 @@
         "id": 3,
         "idusuario":3,
         "monto":5000,
-        "interes":0.2,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -42,7 +42,7 @@
         "id": 4,
         "idusuario":4,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -54,7 +54,7 @@
         "id": 5,
         "idusuario":5,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -66,7 +66,7 @@
         "id": 6,
         "idusuario":6,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -78,7 +78,7 @@
         "id": 7,
         "idusuario":7,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -90,7 +90,7 @@
         "id": 8,
         "idusuario":8,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -102,7 +102,7 @@
         "id": 9,
         "idusuario":9,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -114,7 +114,7 @@
         "id": 10,
         "idusuario":10,
         "monto":8800,
-        "interes": 0.20,
+        "interes": 20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -126,7 +126,7 @@
         "id": 11,
         "idusuario":1,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -138,7 +138,7 @@
         "id": 12,
         "idusuario":4,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -150,7 +150,7 @@
         "id": 13,
         "idusuario":6,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -162,7 +162,7 @@
         "id": 14,
         "idusuario":6,
         "monto":5000,
-        "interes":0.20,
+        "interes":20,
         "Pagos":[
           {"Pagado": true},
           {"Pagado": true},
@@ -173,7 +173,3 @@
 
     ]
   }
-
-
-    
-    
